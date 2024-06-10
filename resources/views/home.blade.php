@@ -88,7 +88,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="coffee_taital">OUR Coffee OFFER</h1>
+                    <h1 class="coffee_taital">OUR Coffee Products</h1>
                 </div>
             </div>
         </div>
@@ -98,117 +98,38 @@
                     <div class="carousel-item active">
                         <div class="container-fluid">
                             <div class="row">
+                                @foreach ($products as $pro)
                                 <div class="col-lg-3 col-md-6">
-                                    <div class="coffee_img"><img src="images/img-1.png"></div>
+                                    <div class="coffee_img"><img src="{{ asset('uploads/product/' . $pro->image) }}"></div>
                                     <div class="coffee_box">
-                                        <h3 class="types_text">TYPES OF COFFEE</h3>
-                                        <p class="looking_text">looking at its layout. The point of</p>
+                                        <h3 class="types_text">{{$pro->name}}</h3>
+                                        <p class="looking_text">{{$pro->description}}</p>
                                         <div class="read_bt"><a href="#">Read More</a></div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="coffee_img"><img src="images/img-2.png"></div>
-                                    <div class="coffee_box">
-                                        <h3 class="types_text">BEAN VARIETIES</h3>
-                                        <p class="looking_text">looking at its layout. The point of</p>
-                                        <div class="read_bt"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="coffee_img"><img src="images/img-3.png"></div>
-                                    <div class="coffee_box">
-                                        <h3 class="types_text">COFFEE & PASTRY</h3>
-                                        <p class="looking_text">looking at its layout. The point of</p>
-                                        <div class="read_bt"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="coffee_img"><img src="images/img-4.png"></div>
-                                    <div class="coffee_box">
-                                        <h3 class="types_text">COFFEE TO GO</h3>
-                                        <p class="looking_text">looking at its layout. The point of</p>
-                                        <div class="read_bt"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="container-fluid">
                             <div class="row">
+                                @foreach ($products as $pro)
                                 <div class="col-lg-3 col-md-6">
-                                    <div class="coffee_img"><img src="images/img-1.png"></div>
+                                    <div class="coffee_img"><img src="{{ asset('uploads/product/' . $pro->image) }}"></div>
                                     <div class="coffee_box">
-                                        <h3 class="types_text">TYPES OF COFFEE</h3>
-                                        <p class="looking_text">looking at its layout. The point of</p>
+                                        <h3 class="types_text">{{$pro->name}}</h3>
+                                        <p class="looking_text">{{$pro->description}}</p>
                                         <div class="read_bt"><a href="#">Read More</a></div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="coffee_img"><img src="images/img-2.png"></div>
-                                    <div class="coffee_box">
-                                        <h3 class="types_text">BEAN VARIETIES</h3>
-                                        <p class="looking_text">looking at its layout. The point of</p>
-                                        <div class="read_bt"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="coffee_img"><img src="images/img-3.png"></div>
-                                    <div class="coffee_box">
-                                        <h3 class="types_text">COFFEE & PASTRY</h3>
-                                        <p class="looking_text">looking at its layout. The point of</p>
-                                        <div class="read_bt"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="coffee_img"><img src="images/img-4.png"></div>
-                                    <div class="coffee_box">
-                                        <h3 class="types_text">COFFEE TO GO</h3>
-                                        <p class="looking_text">looking at its layout. The point of</p>
-                                        <div class="read_bt"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
+                                @endforeach
+
+
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="coffee_img"><img src="images/img-1.png"></div>
-                                    <div class="coffee_box">
-                                        <h3 class="types_text">TYPES OF COFFEE</h3>
-                                        <p class="looking_text">looking at its layout. The point of</p>
-                                        <div class="read_bt"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="coffee_img"><img src="images/img-2.png"></div>
-                                    <div class="coffee_box">
-                                        <h3 class="types_text">BEAN VARIETIES</h3>
-                                        <p class="looking_text">looking at its layout. The point of</p>
-                                        <div class="read_bt"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="coffee_img"><img src="images/img-3.png"></div>
-                                    <div class="coffee_box">
-                                        <h3 class="types_text">COFFEE & PASTRY</h3>
-                                        <p class="looking_text">looking at its layout. The point of</p>
-                                        <div class="read_bt"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="coffee_img"><img src="images/img-4.png"></div>
-                                    <div class="coffee_box">
-                                        <h3 class="types_text">COFFEE TO GO</h3>
-                                        <p class="looking_text">looking at its layout. The point of</p>
-                                        <div class="read_bt"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
                 <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
                     <i class="fa fa-arrow-left"></i>
@@ -246,7 +167,7 @@
                             <iframe
                                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France"
                                 width="250" height="500" frameborder="0" style="border:0; width: 100%;"
-                                allowfullscreen=""></iframe>
+                                allowfullscreen=""en></iframe>
                         </div>
                     </div>
                 </div>
