@@ -19,13 +19,20 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('home');
+    })->name('dashboard');
+});
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
 
-        Route::GET('/dashboard', 'App\Http\Controllers\ProductController@view');
+        // Route::GET('/dashboard', 'App\Http\Controllers\ProductController@view');
 
 
 });
-
-
 
 //route
 Route::get('/about', function () {
