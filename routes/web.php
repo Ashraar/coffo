@@ -19,10 +19,12 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('home');
-    })->name('dashboard');
+
+        Route::GET('/dashboard', 'App\Http\Controllers\ProductController@view');
+
+
 });
+
 
 
 //route

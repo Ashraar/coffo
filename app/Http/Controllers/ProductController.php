@@ -190,4 +190,12 @@ class ProductController extends Controller
         return view('admin.product.show', compact('products'));
 
     }
+    //show
+    public function view()
+    {
+        //view all products
+        $products = Product::all();
+        return view('home', compact('products'));
+
+    }
 }
